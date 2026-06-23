@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveScape</title>
+    <!-- Basic styling for the redirect page -->
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        a.btn {
+            background-color: #238636;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+        a.btn:hover {
+            background-color: #2ea043;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>LiveScape</h1>
+    <p>Opening your wallpaper...</p>
+    
+    <a id="manual-link" href="#" class="btn">Click here if nothing happens</a>
+    
+    <div class="footer">
+        Don't have LiveScape? <a href="https://github.com/BrijeshGhori/LiveScape/releases/latest" style="color: #58a6ff; text-decoration: none;">Download for Mac</a>
+    </div>
+
+    <script>
+        // Extract the ID from the URL query parameter (e.g., ?id=...)
+        const urlParams = new URLSearchParams(window.location.search);
+        const packId = urlParams.get('id');
+
+        if (packId) {
+            // Construct the custom app scheme URL
+            const appUrl = "livescape://pack/" + encodeURIComponent(packId);
+            
+            // Set the manual fallback button
+            document.getElementById("manual-link").href = appUrl;
+            
+            // Attempt to automatically redirect the browser to open the app
+            window.location.href = appUrl;
+        } else {
+            // If no ID is provided, just show the app page
+            document.querySelector("p").innerText = "Welcome to LiveScape!";
+            document.getElementById("manual-link").style.display = "none";
+        }
+    </script>
+</body>
+</html>
