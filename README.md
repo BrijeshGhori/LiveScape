@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/BrijeshGhori/LiveScape/main/assets/icon.png" width="128" alt="LiveScape Logo"/>
 
-  <h1>🌌 LiveScape</h1>
+  <h1>LiveScape</h1>
   
   <p>
     <b>Breathe life into your macOS desktop with dynamic, interactive video wallpapers.</b>
@@ -70,7 +70,7 @@ When you double-click LiveScape for the first time, macOS will show a warning: *
 
 ## 🖱️ Usage Guide
 
-Once installed, LiveScape operates entirely from your top Menu Bar. Look for the 🌌 icon near your WiFi and Battery indicators.
+Once installed, LiveScape operates entirely from your top Menu Bar. Look for the <img src="https://raw.githubusercontent.com/BrijeshGhori/LiveScape/main/assets/menu-icon.png" width="20" alt="LiveScape Logo"/> icon near your WiFi and Battery indicators.
 
 ### Applying a Wallpaper
 1. Click the LiveScape menu bar icon.
