@@ -10,7 +10,7 @@
   <p>
     <a href="#-features">Features</a> • 
     <a href="#-installation--setup">Installation</a> • 
-    <a href="#-usage-guide">Usage Guide</a>
+    <a href="#%EF%B8%8F-usage-guide">Usage Guide</a>
   </p>
 </div>
 
