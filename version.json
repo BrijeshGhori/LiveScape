@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "url": "https://github.com/BrijeshGhori/LiveScape/releases/download/v1.0.15/LiveScape.zip",
+  "url": "https://github.com/BrijeshGhori/LiveScape/releases/download/v2.0.0/LiveScape.zip",
   "notes": "Updated the app completely for new macOS 27 (Golden Gate)\nWARNING: If you are on macOS26 or below, do not update the app it might crash",
   "forceUpdate": false,
 }
