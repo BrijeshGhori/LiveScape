@@ -1,6 +1,13 @@
 {
-  "version": "1.0.15",
-  "url": "https://github.com/BrijeshGhori/LiveScape/releases/download/v1.0.15/LiveScape.zip",
-  "notes": "Updated the app\nEnjoy the new release 1.0.15",
-  "forceUpdate":false
+  "version": "1.6.0",
+  "url": "link-to-v1.6.0.zip",
+  "notes": "Bug fixes for older macOS",
+  "forceUpdate": false,
+  
+  "nextGenRelease": {
+    "version": "2.0.0",
+    "url": "link-to-v2.0.0.zip",
+    "notes": "Major update for macOS 27 and newer!",
+    "minimumOSVersion": 27
+  }
 }
